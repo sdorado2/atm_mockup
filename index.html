@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ATM_Mockup</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MainContainer Box-->
+    <div class="mainBox">
+      <!-- left buttons -->
+      <div class="leftBox">
+        <div class="lBtns">
+          <!-- deposit -->
+          <button class="deposit" onclick="depositInfo()">DEPOSIT</button>
+          <!-- withdraw-->
+          <button class="withdraw" onclick="withdrawInfo()">WITHDRAW</button>
+        </div>
+      </div>
+
+      <!-- mainScreen -->
+      <div class="mainScreen"></div>
+
+      <!-- right buttons -->
+      <div class="rightBox">
+        <!-- Check Balance-->
+        <div class="rBtns">
+          <button class="balance" onclick="balanceInfo()">BALANCE</button>
+          <!-- Transfer -->
+          <button class="transfer">TRANSFER</button>
+        </div>
+      </div>
+    </div>
+    <!-- numberPad -->
+    <div class="numPad">
+      <div class="padNum">
+        <!-- Buttons #-->
+        <button class="numOne" onclick="numInput('one')">1</button>
+        <button class="numTwo" onclick="numInput('two')">2</button>
+        <button class="numThree"onclick="numInput('three')">3</button>
+        <button class="numFour"onclick="numInput('four')">4</button>
+        <button class="numFive"onclick="numInput('five')">5</button>
+        <button class="numSix"onclick="numInput('six')">6</button>
+        <button class="numSeven"onclick="numInput('seven')">7</button>
+        <button class="numEight"onclick="numInput('eight')">8</button>
+        <button class="numNine"onclick="numInput('nine')">9</button>
+        <button class="numZero"onclick="numInput('zero')">0</button>
+      </div>
+      <!-- Enter Button-->
+      <div class="bigBtns">
+        <button class="back">BACK</button>
+        <button class="clear">CLEAR</button>
+        <button class="enter">ENTER</button>
+      </div>
+      <!-- Clear -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

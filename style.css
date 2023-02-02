@@ -1,0 +1,91 @@
+.mainBox {
+  display: flex;
+  border: solid purple;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+}
+.mainScreen {
+  border: solid red;
+  width: 60%;
+}
+
+.leftBox {
+  display: block;
+  border: solid green;
+  width: 20%;
+}
+
+.lBtns {
+  border: solid aqua;
+  height: 200px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.deposit {
+  width: 100%;
+  height:20%
+}
+.withdraw {
+  width: 100%;
+  height:20%
+}
+
+.rightBox {
+  display: block;
+  border: solid navy;
+  width: 20%;
+}
+.rBtns {
+    border: solid aqua;
+    height: 200px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.balance{
+    width:100%;
+    height: 20%;
+}
+.transfer{
+    width:100%;
+    height : 20%;
+}
+
+.numPad {
+  display: flex;
+  border: solid black;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+
+.padNum {
+  display: grid;
+  grid-template-columns: repeat(3, 125px);
+}
+
+.numOne,
+.numTwo,
+.numThree,
+.numFour,
+.numFive,
+.numSix,
+.numSeven,
+.numEight,
+.numNine {
+  width: 60%;
+  height : 70%;
+  margin: auto;
+}
+
+.numZero {
+  width: 90%;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.bigBtns{
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 40px 40px 100px;
+}

@@ -5,7 +5,7 @@ let balance = {
 
 //Deposit
 let plusBalance = () => {
-  let deposit = parseInt(prompt("Deposit: ")); 
+  let deposit = parseInt(prompt("Deposit: "));
   console.log("deposit is : " + deposit);
   return (balance.money += deposit);
 };
@@ -35,7 +35,7 @@ let checkBalance = () => {
 
 const balanceInfo = () => {
   let infoBox = document.querySelector(".mainScreen");
-  infoBox.innerHTML =`Current Balance is : $` + checkBalance();
+  infoBox.innerHTML = `Current Balance is : $` + checkBalance();
 };
 
 //Display Information
@@ -57,40 +57,46 @@ const numInput = (button) => {
   if (button === "one") {
     let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.one;
+    return storedNum.push(padDigits.one);
   } else if (button === "two") {
     let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.two;
+    return storedNum.push(padDigits.two);
   } else if (button === "three") {
     let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.three;
-  } else if (button === 'four') {
-    let numDisp = document.querySelector('.mainScreen');
+  } else if (button === "four") {
+    let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.four;
-  } else if (button === 'five') {
-    let numDisp = document.querySelector('.mainScreen');
+  } else if (button === "five") {
+    let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.five;
-  }else if (button === 'six') {
-    let numDisp = document.querySelector('.mainScreen');
+  } else if (button === "six") {
+    let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.six;
-  }else if (button === 'seven') {
-    let numDisp = document.querySelector('.mainScreen');
+  } else if (button === "seven") {
+    let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.seven;
-  }else if (button === 'eight') {
-    let numDisp = document.querySelector('.mainScreen');
+  } else if (button === "eight") {
+    let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.eight;
-  }else if (button === 'nine') {
-    let numDisp = document.querySelector('.mainScreen');
+  } else if (button === "nine") {
+    let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.nine;
-  }else if (button === 'zero') {
-    let numDisp = document.querySelector('.mainScreen');
+  } else if (button === "zero") {
+    let numDisp = document.querySelector(".mainScreen");
     numDisp.innerHTML = padDigits.zero;
   }
 };
 
-let enterNumb = ()=>{
-    
-}
+let storedNum = [];
+console.log(storedNum);
 
+let enteredNumb = () => {
+  let joinNum = parseInt(storedNum.join(""));
+  return (joinNum);
+  
+};
 
 //Clear Info
 
